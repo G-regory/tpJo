@@ -8,7 +8,7 @@ public class retournValeur {
 		System.out.println(carac);
 		System.out.println(troisChar);
 		System.out.println(inverse);
-		System.out.println("Met tes prochains exo dans un fichier readme stp");
+		System.out.println("ils sont ou les exo);
 	}
 
 }
