@@ -8,8 +8,7 @@ public class retournValeur {
 		System.out.println(carac);
 		System.out.println(troisChar);
 		System.out.println(inverse);
-		ls sz:s
-dystem.out.println("");
+		System.out.println("Met tes prochains exo dans un fichier readme stp");
 	}
 
 }
