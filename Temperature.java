@@ -8,8 +8,8 @@ public class Temperature {
 		System.out.println("Convertisseur degrés celsius et degré fahrenheit");
 		int choix;
 		double tempchoisi=0.0, tempconvert=0.0;
-		String temporaire;
-		char reponse=' ';
+		String temporaire= null;
+		char reponse = 0;
 		Scanner clv = new Scanner(System.in);
 		
 		do {
@@ -20,7 +20,7 @@ public class Temperature {
 			choix=clv.nextInt();
 			if(choix==1 || choix==2){
 				if(choix==1) {
-					System.out.println("Températion à convertir :");
+			System.out.println("Températion à convertir :");
 					tempchoisi=clv.nextDouble();
 					tempconvert=(tempchoisi-32)*5/9 ;
 					System.out.println(tempchoisi+" °F correspond à : "+tempconvert);
@@ -32,14 +32,16 @@ public class Temperature {
 						System.out.println(tempchoisi+" °C correspond à : "+tempconvert);
 					}
 				}System.out.println("Again (O/N)?");
-				temporaire=clv.nextLine();
-				reponse=temporaire.charAt(0);
+                                Scanner sc2 = new Scanner (System.in);
+                               String choix2 = sc2.nextLine();
+				reponse=choix2.charAt(0);
+				//reponse=temporaire.charAt(0);
 			}else {
 				System.out.println("Vous n'avez pas choisi de température correct");
 			}
 				
 			
-		}while(choix!=1 && choix !=2 || reponse=='o');
+		}while(choix!=1 && choix !=2 || reponse=='O' || reponse=='o');
 
 	}
 
