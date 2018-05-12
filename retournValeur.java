@@ -8,7 +8,7 @@ public class retournValeur {
 		System.out.println(carac);
 		System.out.println(troisChar);
 		System.out.println(inverse);
-		System.out.println("ils sont ou les exo);
+		System.out.println("ils sont ou les exo?");
 	}
 
 }
