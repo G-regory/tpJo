@@ -1,0 +1,47 @@
+package devoir_johan;
+
+import java.util.Scanner;
+
+public class Minimum4 {
+
+	public static void main(String[] args) {
+    /*----------------------------------------------------------------------------------------------------------*/
+    /*   ----------------------------       Consigne du TD       ----------------------------------------       */                         
+		/*        Ecrire en langage JAVA un programme Minimum4.java qui lit au clavier 4 nombres réels
+		 *                           et qui affiche le plus petit des quatre                                          */
+     //--------------------------------------------------------------------------------------------------------------
+		 
+     //appel objet pour récupérer les saisie clavier et initialisation des 4 nomb réels
+		Scanner clv =new Scanner(System.in);
+		int a,b,c,d;
+		System.out.println("Quel chiffre voulez vous donner à a :");
+		a=clv.nextInt();
+		System.out.println("Quel chiffre voulez vous donner à b :");
+		b=clv.nextInt();
+		System.out.println("Quel chiffre voulez vous donner à c :");
+		c=clv.nextInt();
+		System.out.println("Quel chiffre voulez vous donner à d :");
+		d=clv.nextInt();
+		
+		System.out.println("a est égale à "+a+"\nb est égale à "+b+"\nc est égale à "+c+"\nd est égale à "+d);
+    
+    // condition qui vérifie chaque nombre, pour trouver lequel est le plus petit   
+    
+		if(a<b) {
+			if(a<c) {
+				if(a<d) {
+					System.out.println("a est le plus petit");
+				}
+			}
+		}else if(b<c) {
+			if(b<d) {
+				System.out.println("b est le plus petit");
+			}
+		}else if(c<d) {
+			System.out.println("c est le plus petit");
+		}else {
+			System.out.println("d est le plus petit");
+		}
+	}
+
+}
